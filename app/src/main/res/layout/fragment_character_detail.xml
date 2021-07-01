@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".character.presentation.ui.detail.CharacterDetailFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/characterLabelDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/characterHeaderDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/design_default_color_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/characterHeaderDivider" />
+
+    <ImageView
+        android:id="@+id/characterImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/breaking_bad_picture"
+        app:layout_constraintBottom_toTopOf="@+id/characterNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/characterNameTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/characterHeaderDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/characterNickNameLabel"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/nickname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/characterHeaderDivider" />
+
+    <TextView
+        android:id="@+id/characterNickNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/characterNickNameLabel"
+        app:layout_constraintStart_toStartOf="@+id/characterLabelDivider"
+        app:layout_constraintTop_toTopOf="@+id/characterNickNameLabel"
+        tools:text="@tools:sample/first_names" />
+
+    <TextView
+        android:id="@+id/characterOcupattionLabel"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ocupation"
+        app:layout_constraintStart_toStartOf="@+id/characterNickNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/characterNickNameLabel" />
+
+    <TextView
+        android:id="@+id/characterOcupationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/characterOcupattionLabel"
+        app:layout_constraintStart_toStartOf="@+id/characterNickNameText"
+        app:layout_constraintTop_toBottomOf="@+id/characterNickNameLabel"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/characterBirthdateLabel"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/birthdate"
+        app:layout_constraintStart_toStartOf="@+id/characterOcupattionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/characterOcupattionLabel" />
+
+    <TextView
+        android:id="@+id/characterBirthdateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/characterBirthdateLabel"
+        app:layout_constraintStart_toStartOf="@+id/characterOcupationsText"
+        app:layout_constraintTop_toBottomOf="@+id/characterOcupattionLabel"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <TextView
+        android:id="@+id/characterStatusLabel"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/status"
+        app:layout_constraintStart_toStartOf="@+id/characterBirthdateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/characterBirthdateLabel" />
+
+    <TextView
+        android:id="@+id/characterStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/characterStatusLabel"
+        app:layout_constraintStart_toStartOf="@+id/characterBirthdateText"
+        app:layout_constraintTop_toTopOf="@+id/characterStatusLabel"
+        tools:text="@tools:sample/lorem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

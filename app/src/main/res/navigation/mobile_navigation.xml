@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_list">
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.rribesa.breakingbad.character.presentation.ui.list.CharacterListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_character_list" />
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.rribesa.breakingbad.character.presentation.ui.detail.CharacterDetailFragment"
+        android:label="@string/title_character"
+        tools:layout="@layout/fragment_character_detail" >
+
+    </fragment>
+
+</navigation>

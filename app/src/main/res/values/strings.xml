@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BreakingBad</string>
+    <string name="title_activity_breaking_bad">BreakingBadActivity</string>
+    <string name="title_list">List</string>
+    <string name="title_character">Character</string>
+    <string name="nickname">Nickname:</string>
+    <string name="ocupation">Ocupation:</string>
+    <string name="birthdate">BirthDate:</string>
+    <string name="status">Status:</string>
+    <string name="breaking_bad_picture">Breaking Bad Picture</string>
+    <string name="breaking_bad_title">Breaking Bad</string>
+    <string name="breaking_bad_subtitle">Characters</string>
+</resources>
